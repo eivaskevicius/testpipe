@@ -10,6 +10,7 @@ rm -r src/__test__
 
 npm pack
 cd ..
+
 git clone resource-sbalpi snapshot
 rm snapshot/sbalpi*
 cp resource-sbalpi/sbalpi* snapshot

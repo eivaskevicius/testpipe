@@ -1,6 +1,6 @@
 {
   "name": "sbalpi",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "my first build pipeline",
   "main": "index.js",
   "scripts": {

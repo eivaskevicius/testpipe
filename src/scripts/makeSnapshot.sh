@@ -19,6 +19,8 @@ git clone resource-sbalpi snapshot
 mv resource-sbalpi/sbalpi* snapshot/snapshots
 cd snapshot
 ls -la
+git config --global user.email "e.ivaskevicius@iplabs.de"
+git config --global user.name "eivaskevicius"
 git add -A
 git status
 git commit -m "add snapshot"

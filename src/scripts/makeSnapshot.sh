@@ -16,7 +16,7 @@ npm pack
 ls -la
 cd ..
 git clone resource-sbalpi snapshot
-mv resource-sbalpi/sbalpi* snapshot/snapshots
+cp resource-sbalpi/sbalpi* snapshot
 cd snapshot
 ls -la
 git config --global user.email "e.ivaskevicius@iplabs.de"

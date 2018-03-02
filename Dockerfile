@@ -1,5 +1,5 @@
 # Docker Image to start with 
-FROM node:carbon
+FROM node:alpine
 
 # Create app directory
 WORKDIR /usr/src/app

@@ -11,8 +11,6 @@ sbalpi=${sbalpi:0:12}
 dock="$dock$sbalpi"
 dockname="$dock.tar"
 
-docker run -v /var/run/docker.sock:/var/run/docker.sock ...
-
 docker build -t eivaskevicius/$dock .
 docker save -o $dockname eivaskevicius/$dock
 

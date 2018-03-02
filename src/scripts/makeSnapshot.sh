@@ -11,6 +11,8 @@ rm -r src/__test__
 npm pack
 cd ..
 
+git config --global user.email "e.ivaskevicius@iplabs.de"
+git config --global user.name "eivaskevicius"
 git clone resource-sbalpi snapshot
 rm snapshot/sbalpi*
 cp resource-sbalpi/sbalpi* snapshot

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title> sbalpI </title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"> </script>
+    <style>
+        body { padding:50px; background-color: #cccccc }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>res.sendFile() Works!</h1>
+        </div>
+    </div>
+
+    <div>
+        <form name="myForm" action="/add" method="post">
+            <input type="number" id="number1" name="nr1"> +
+            <input type="number" id="number2" name="nr2"> =
+            <span id="result"></span>
+            <br>
+            <input type="button" onclick="changeAnswer()" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

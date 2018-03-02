@@ -1,0 +1,29 @@
+{
+  "name": "sbalpi",
+  "version": "1.0.1",
+  "description": "my first build pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eivaskevicius/sbalpi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eivaskevicius/sbalpi/issues"
+  },
+  "homepage": "https://github.com/eivaskevicius/sbalpi#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "jest": "^22.4.2"
+  },
+  "bundleDependencies": [
+    "express"
+  ]
+}

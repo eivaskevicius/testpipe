@@ -1,0 +1,3 @@
+# prevents the docker to copy these modules  
+node_modules
+npm-debug.log

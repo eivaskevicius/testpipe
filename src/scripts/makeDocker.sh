@@ -2,7 +2,7 @@
 
 set -e -u -x
 
-git clone resource-sbalpi snapshot
+cp snapshot/sbalpi* resource-sbalpi
 cd resource-sbalpi
 
 dock="docker-"

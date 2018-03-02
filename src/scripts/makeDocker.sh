@@ -2,6 +2,9 @@
 
 set -e -u -x
 
+source /docker-lib.sh
+start_docker
+
 cp snapshot/sbalpi* resource-sbalpi
 cd resource-sbalpi
 
@@ -10,8 +13,6 @@ sbalpi=$(ls sbalpi*)
 sbalpi=${sbalpi:0:12}
 dock="$dock$sbalpi"
 dockname="$dock.tar"
-
-docker daemon &
 
 docker build -t eivaskevicius/$dock .
 docker save -o $dockname eivaskevicius/$dock

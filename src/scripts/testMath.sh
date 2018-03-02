@@ -2,6 +2,6 @@
 
 set -e -u -x
 
-cp -r node_modules resource-sbalpi-dev
-cd resource-sbalpi-dev
+cp -r node_modules resource-sbalpi
+cd resource-sbalpi
 npm test

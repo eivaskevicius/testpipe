@@ -6,9 +6,11 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
-COPY package*.json ./
+COPY sbalpi*.tgz ./
 
-RUN npm install
+RUN npm install sbalpi*.tgz
+RUN mv node_modules node
+RUN mv node/sbalpi/* .
 
 # Bundle app source
 COPY . .

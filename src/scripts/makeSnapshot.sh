@@ -16,6 +16,7 @@ npm pack
 ls -la
 cd ..
 git clone resource-sbalpi snapshot
+rm snapshot/sbalpi*
 cp resource-sbalpi/sbalpi* snapshot
 cd snapshot
 ls -la

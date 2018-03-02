@@ -2,27 +2,26 @@
 
 set -e -u -x
 
-# git clone resource-sbalpi-dev snapshot
-# cp -r node_modules snapshot
-
-cp -r node_modules resource-sbalpi
+git clone resource-sbalpi snapshot
 cd resource-sbalpi
 
-npm remove jest
-rm -r src/__test__
+dock="docker-"
+sbalpi=$(ls sbalpi*)
+sbalpi=${sbalpi:0:12}
+dock="$dock$sbalpi"
+dockname="$dock.tar"
 
-npm pack
+docker build -t eivaskevicius/$dock .
+docker save -o $dockname eivaskevicius/$dock
 
-ls -la
 cd ..
-git clone resource-sbalpi snapshot
-cp resource-sbalpi/sbalpi* snapshot
+rm snapshot/docker*
+cp resource-sbalpi/docker* snapshot
 cd snapshot
-ls -la
+
 git config --global user.email "e.ivaskevicius@iplabs.de"
 git config --global user.name "eivaskevicius"
-npm version patch
 git add -A
 git status
-git commit -m "add snapshot"
+git commit -m "add docker"
 git pull

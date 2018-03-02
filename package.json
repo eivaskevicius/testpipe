@@ -1,5 +1,5 @@
 {
-  "name": "sbalpi",
+  "name": "testpipe",
   "version": "1.0.6",
   "description": "my first build pipeline",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/eivaskevicius/sbalpi.git"
+    "url": "git+ssh://git@github.com/eivaskevicius/testpipe.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eivaskevicius/sbalpi/issues"
+    "url": "https://github.com/eivaskevicius/testpipe/issues"
   },
-  "homepage": "https://github.com/eivaskevicius/sbalpi#readme",
+  "homepage": "https://github.com/eivaskevicius/testpipe#readme",
   "dependencies": {
     "express": "^4.16.2"
   },

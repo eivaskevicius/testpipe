@@ -11,8 +11,8 @@ sbalpi=${sbalpi:0:12}
 dock="$dock$sbalpi"
 dockname="$dock.tar"
 
-docker build -t eivaskevicius/$dock .
-docker save -o $dockname eivaskevicius/$dock
+sudo docker build -t eivaskevicius/$dock .
+sudo docker save -o $dockname eivaskevicius/$dock
 
 cd ..
 rm snapshot/docker*

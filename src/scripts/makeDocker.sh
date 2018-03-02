@@ -21,7 +21,7 @@ cd snapshot
 
 git config --global user.email "e.ivaskevicius@iplabs.de"
 git config --global user.name "eivaskevicius"
+git pull
 git add -A
 git status
 git commit -m "add docker"
-git pull

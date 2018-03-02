@@ -23,7 +23,7 @@ ls -la
 git config --global user.email "e.ivaskevicius@iplabs.de"
 git config --global user.name "eivaskevicius"
 npm version patch
+git pull
 git add -A
 git status
 git commit -m "add snapshot"
-git pull

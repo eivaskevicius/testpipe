@@ -20,6 +20,9 @@ cd resource-sbalpi
 service docker start
 service docker status
 sleep 5
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rmi -f $(docker images -a -q)
 docker build -t eivaskevicius/docker .
 docker save -o docker.tar eivaskevicius/docker
 

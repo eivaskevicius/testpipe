@@ -2,11 +2,11 @@
 
 set -e -u -x
 
-docker build -t eivaskevicius/$dock .
-docker save -o $dockname eivaskevicius/$dock
+# docker build -t eivaskevicius/$dock .
+# docker save -o $dockname eivaskevicius/$dock
 
-source /docker-lib.sh
-start_docker
+# source /docker-lib.sh
+# start_docker
 
 cp snapshot/sbalpi* resource-sbalpi
 cd resource-sbalpi

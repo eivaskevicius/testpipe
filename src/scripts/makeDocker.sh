@@ -3,7 +3,7 @@
 set -e -u -x
 
 source /docker-lib.sh
-start_docker
+sudo start_docker
 
 cp snapshot/sbalpi* resource-sbalpi
 cd resource-sbalpi

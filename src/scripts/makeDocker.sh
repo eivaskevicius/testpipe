@@ -16,11 +16,11 @@ cd resource-sbalpi
 # sbalpi=${sbalpi:0:12}
 # dock="$dock$sbalpi"
 # dockname="$dock.tar"
-
+rm -rf /var/lib/docker/aufs
 service docker start
 service docker status
 sleep 5
-rm -rf /var/lib/docker/aufs
+
 # docker ps
 # docker ps -a
 # docker rm $(docker ps -qa --no-trunc --filter "status=exited")

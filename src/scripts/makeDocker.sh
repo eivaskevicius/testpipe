@@ -2,6 +2,9 @@
 
 set -e -u -x
 
+docker build -t eivaskevicius/$dock .
+docker save -o $dockname eivaskevicius/$dock
+
 source /docker-lib.sh
 start_docker
 

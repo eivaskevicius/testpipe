@@ -20,7 +20,7 @@ cd resource-sbalpi
 service docker start
 service docker status
 sleep 5
-
+rm -rf /var/lib/docker/aufs
 # docker ps
 # docker ps -a
 # docker rm $(docker ps -qa --no-trunc --filter "status=exited")

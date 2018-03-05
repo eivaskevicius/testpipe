@@ -20,8 +20,8 @@ cd resource-sbalpi
 service docker start
 service docker status
 sleep 5
-docker build -t eivaskevicius/$dock .
-docker save -o $dockname eivaskevicius/$dock
+docker build -t eivaskevicius/docker .
+docker save -o docker.tar eivaskevicius/docker
 
 service docker stop
 cd ..
